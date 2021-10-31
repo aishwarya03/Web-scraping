@@ -5,7 +5,6 @@ import re
 import pandas as pd
 queries=['ui figma', 'digital art']
 url_lst=[]
-text_lst=[]
 with requests.Session() as s:
     for query in queries:
         response=requests.get("https://www.behance.net/search/projects?tracking_source=typeahead_search_direct&search="+query)
